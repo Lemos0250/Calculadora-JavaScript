@@ -26,6 +26,8 @@
     border:solid;
     border-radius: 12px;
     padding: 20px;
+
+    cursor: no-drop;
 }
 
 .button {
@@ -45,4 +47,21 @@
 .button:hover {
     background-color: rgb(180, 177, 177);
     border:outset;
+}
+
+#resultado {
+    width: 313px;
+    height: 37.5px;
+
+    background-color: green;
+
+    margin-top: 5px;
+    margin: 5px;
+    text-align: right;
+
+    border:solid;
+    border-color: white;
+
+    Font-family: Consolas, monaco, monospace;
+    color:black;
 }

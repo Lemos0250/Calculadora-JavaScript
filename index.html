@@ -12,38 +12,41 @@
 <body>
     <div class="estrutura">
         <div class="calculadora">
-            <h1>Calculadora</h1>
-            <p id="resultado">Resultado</p>
+            <h1>Calculator</h1>
+            <p id="resultado"></p>
             <table>
                 <tr>
-                    <td><button class="button">C</button></td>
-                    <td><button class="button"><</button></td>
-                    <td><button class="button">/</button></td>
-                    <td><button class="button">X</button></td>
+                    <td><button class="button" onclick="erase('C')"> C </button></td>
+                    <td><button class="button" onclick="erase_one_by_one('<')"> < </button></td>
+                    <td><button class="button" onclick="insertion('/')"> / </button></td>
+                    <td><button class="button" onclick="insertion('*')"> * </button></td>
                 </tr>
                 <tr>
-                    <td><button class="button">7</button></td>
-                    <td><button class="button">8</button></td>
-                    <td><button class="button">9</button></td>
-                    <td><button class="button">-</button></td>
+                    <td><button class="button" onclick="insertion('7')">7</button></td>
+                    <td><button class="button" onclick="insertion('8')">8</button></td>
+                    <td><button class="button" onclick="insertion('9')">9</button></td>
+                    <td><button class="button" onclick="insertion('-')"> - </button></td>
                 </tr>
                 <tr>
-                    <td><button class="button">4</button></td>
-                    <td><button class="button">5</button></td>
-                    <td><button class="button">6</button></td>
-                    <td><button class="button">+</button></td>
+                    <td><button class="button" onclick="insertion('4')">4</button></td>
+                    <td><button class="button" onclick="insertion('5')">5</button></td>
+                    <td><button class="button" onclick="insertion('6')">6</button></td>
+                    <td><button class="button" onclick="insertion('+')"> + </button></td>
                 </tr>
                 <tr>
-                    <td><button class="button">1</button></td>
-                    <td><button class="button">2</button></td>
-                    <td><button class="button">3</button></td>
-                    <td rowspan="2"><button class="button" style="height: 157px;">=</button></td>
+                    <td><button class="button" onclick="insertion('1')">1</button></td>
+                    <td><button class="button" onclick="insertion('2')">2</button></td>
+                    <td><button class="button" onclick="insertion('3')">3</button></td>
+                    <td rowspan="2"><button class="button" onclick="result('=')" style="height: 157px;"> = </button></td>
                 </tr><tr>
-                    <td colspan="2"><button class="button" style="width: 157px;">0</button></td>
-                    <td><button class="button">.</button></td>
+                    <td colspan="2"><button class="button" onclick="insertion('0')"style="width: 157px;">0</button></td>
+                    <td><button class="button" onclick="insertion('.')">.</button></td>
                 </tr>
             </table>
         </div>
     </div>
+
+    <script src="index.js"></script>
+
 </body>
 </html>
