@@ -1,8 +1,3 @@
-document.onkeyup = e => {
-    if(e.key == "0" || e.key == "num0") {
-        type_to(0);
-    }
-}
 
 function result() {
     let question = document.getElementById('resultado').innerHTML
@@ -11,13 +6,16 @@ function result() {
         document.getElementById('resultado').innerHTML = eval(question)
     }
     else {
-        document.getElementById('resultado').innerHTML = "Error " (question)
+        document.getElementById('resultado').innerHTML = "Error "
     }
+
 }
 
 function insertion(dig) {
    let digito = document.getElementById('resultado').innerHTML
    document.getElementById('resultado').innerHTML = digito + dig
+
+   digito.length = 2
 }
 
 function erase_one_by_one() {
